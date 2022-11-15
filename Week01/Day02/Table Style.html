@@ -2,16 +2,60 @@
 <html>
     <head>
         <style>
-            div{
-                text-align: center;
+           /* div{
                 padding: 20px;
+            }*/
+            #main h1{
+                border: 2px solid blue;
+                background-color: fuchsia;
             }
-            
+            p::first-letter{
+                color: purple;
+                font-size: 100px;
+            }
+            table{
+                width: 1000px;
+                border-collapse: collapse;
+            }
+            tr{
+                border-bottom: 2px solid grey;
+            }
+            /*.even{
+                background-color: lightgrey;
+            }
+            .odd{
+                background-color: white;
+            }*/
+            tr:nth-child(odd){
+                background-color: white;
+            }
+            tr:nth-child(even){
+                background-color: lightgrey;
+            }
+            tr th{
+                background-color: green;
+                color: white;
+                text-align: center;
+                text-decoration: underline;
+            }
+            /*.even:hover, .odd:hover{
+                background-color: lightyellow;
+            }*/
+            tr:hover{
+                background-color: lightyellow;
+            }
             
         </style>
         <title> Table Styles </title>
     </head>
     <body>
+        <div id="main">
+            <h1> Applying Styles to Tables </h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vel, corporis officia nemo voluptates veritatis temporibus inventore, voluptatibus magni architecto laborum ad porro ratione numquam, exercitationem necessitatibus minus eos libero?
+            </p>
+        </div>
         <div>
             <table id="stdtbl">
                 <tr>
