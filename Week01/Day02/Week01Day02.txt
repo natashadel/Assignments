@@ -1,0 +1,22 @@
+ASSIGNMENT 2
+
+1. What is the difference between style tag and attribute?
+The main difference between tag and attribute is that a tag is a way of representing an HTML element in the program, while an attribute is a way of describing the characteristics of an HTML element. When used as a tag and without the scoped attribute, it must be included as a child of the <head> element and is the primary method by which to include embedded/internal CSS in a document.
+When used inside the <body> element, the <style> element, the scoped attribute is required and is used as an inline attribute. This is done to maintain the seperation of HTML and CSS.
+
+2. How do we style the first letter of the paragraph?
+Use CSS first-letter selector p::first-letter { color: #FF69B4; } This will select and style the first letter of every <p> element.
+
+3. Why do we use ~ and > symbols in css selectors?
+General Sibling (~): The ~ symbol is general sibling combinator and similar to Adjacent sibling combinator. The difference is that this selector does NOT have to immediately follow the first one means It will select all elements that is preceded by the former selector.
+This selector refers to all the selectors following the mentioned selector, i.e the mentioned selector and its child tags will not be affected.
+Eg: div ~ p{
+    background-color:blue;
+    } 
+Child Selector (>): It will target elements which are DIRECT children of a particular element.
+
+Eg:
+div#container > p {
+  border: 1px solid black;
+}
+
