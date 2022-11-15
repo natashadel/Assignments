@@ -1,0 +1,5 @@
+ASSIGNMENT 2
+
+1. What is the difference between style tag and attribute?
+The main difference between tag and attribute is that a tag is a way of representing an HTML element in the program, while an attribute is a way of describing the characteristics of an HTML element. When used as a tag and without the scoped attribute, it must be included as a child of the <head> element and is the primary method by which to include embedded/internal CSS in a document.
+When used inside the <body> element, the <style> element, the scoped attribute is required and is used as an inline attribute. This is done to maintain the seperation of HTML and CSS.
