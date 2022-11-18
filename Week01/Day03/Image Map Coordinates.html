@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Image Navigation</title>
+    </head>
+    <body>
+        
+        <img   onmousemove="getCoords(event)" src="ImageMap_Task_Technologies.png" alt="Technologies" usemap="#techmap" width="400" height="379"  />
+        <h1 id="x"></h1>
+
+ 
+    <script>
+	    function   getCoords(e)
+	    {
+		    var obj = document.getElementById("x");
+		    obj.innerText  = "X = " + e.clientX + ",  Y = " + e.clientY;
+	    }	
+    </script>
+    </body>
+</html>

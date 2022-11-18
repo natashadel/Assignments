@@ -1,0 +1,31 @@
+Assingment 03
+
+1.   What is Validation in Client Side Programming?
+On the client-side, client validation should be added to improve the user experience. Client validation should happen on the browser and should be visible to the users and immediately inform users whether the data is valid or not. Client-side validation is an initial check and an important feature of good user experience; by catching invalid data on the client-side, the user can fix it straight away. If it gets to the server and is then rejected, a noticeable delay is caused by a round trip to the server and then back to the client-side to tell the user to fix their data.
+Client means user. So client side validation means when a user use the interface of the product (i.e. it may be a application or website) some validation must be there to prevent incorrect or invalid data input by a user when entering data in a form.
+In website client side means browser side. Basically javascript is used to validate client side inputs, also it can be handled by php. The term “form validation” is a technical term used on the web to check if the information entered by the user in the webform is correct. The form should point out the user made an error or assures the user that the given the log user data is correct. 
+
+2.   What are the advantages of performing Validations?
+-->Form validation serves as the center of communication during the essential processes of interaction between the user interface and the user. 
+-->Form validations provide information just in time (telling users the right time)
+-->Form validations select the most appropriate place for displaying messages and error messages
+-->Form validations inform in plain and straightforward language for non-technical users to understand
+-->You need form validation as a security measure. Forms are an easy target for hackers because we all know they're connected to a database somehow. Letting people put whatever they want into your form opens you up to SQL injection attacks as a start and it can get way more advanced than that.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

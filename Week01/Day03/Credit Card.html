@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style> 
+        div{
+            border: 2px solid grey;
+        }
+            .form{
+                border: 2px solid grey;
+                float: center;
+                width: 600px;
+                height: 500px;
+                align-items: center;
+                color:darkslategrey;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 18px;
+                border-top:none;
+                margin:auto;
+                padding: 10px;
+            }
+            
+            
+            .blue{
+                background-color: rgb(9, 148, 212);
+                height: 40px;
+                color: white;
+                text-align: center;
+                border-bottom: none;
+                width: 620px;   
+                margin: auto;
+                border-top: 2px solid grey;
+                font-size: 18px;
+            }
+            footer{
+                background-color: grey;
+                width: 620px;
+                height: 35px;
+                text-align: center;
+            }
+            .btn{
+                background-color: orange;
+                height:40px;
+                border: 1px solid orange;
+                border-radius: 5px;
+                position: absolute;
+                margin:auto;
+            }
+            
+            
+        </style>
+        <title> Payment Gateway</title>
+    </head>
+    <body>
+        <div class="blue">
+            <p> This is a secure 128-bit SSL Encrypted Payment. You're safe. </p>
+        </div>
+        <div class="form">
+            
+            
+        
+        
+            <form action="" method="POST">
+                <input type="radio" id="r1" name="r1" value="Credit Card">
+                <label> Credit Card (Visa, Mastercard) </label>
+                <img src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Visa-512.png" width="40px" height="40px">
+                <img src="https://pngimg.com/uploads/mastercard/mastercard_PNG23.png" width="40px" height="40px">
+
+                <input type="radio" id="r2" name="r1" value="PayPal">
+                <label> PayPal</label>
+                <img src="https://i0.wp.com/zontastlouis.org/wp-content/uploads/2020/09/PayPal-Logo-edited.jpg?w=543&ssl=1" width="40px" height="40px" position="relative">
+                <br><br><br>
+                <label> Card Number </label><br>
+                <input type="text" id="t1" name="t1" style="width:575px; height: 30px;">
+                <br><br><br>
+                <label> Expiration Date </label>
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                <label> CVV2 / CVC2 </label>
+                
+                
+                
+                
+                <br>
+                <select> 
+                    <option> Month</option>
+                    <option> January</option>
+                    <option> February</option>
+                    <option> March</option>
+                    <option> April</option>
+                    <option> May</option>
+                    <option> June</option>
+                    <option> July</option>
+                    <option> August</option>
+                    <option> September</option>
+                    <option> October</option>
+                    <option> November</option>
+                    <option> December</option>
+                </select>
+                <span> / </span>
+                <select> 
+                    <option>Year</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                </select>
+                &emsp; &emsp; &emsp; &emsp; &emsp;  
+                <input type="text" id="t4" name="t4" width="100px">
+                
+                <br><br><br>
+                <label> Full Name on Card</label><br>
+                <input type="text" id="t3" name="t3" style="width:575px; height: 30px;"><br><br>
+                <div style="background-color: grey; text-align:center;">
+                    <p class="grey"> You will be charged $29.00 every month </p>
+                </div>
+                    
+    
+                <br>
+                <div class="btnctr" style="position:absolute; border:none;">
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    <input type="submit" id="bt1" name="bt1" value="Complete Transaction" class="btn"> 
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                    &emsp;
+                </div>
+                
+                
+                
+            </form>
+            
+        </div>
+    </body>
+</html>

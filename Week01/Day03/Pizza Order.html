@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #main{
+                margin:auto;
+                border: 1px solid grey;
+                width:600px;
+                padding: 20px;
+                background-color: cadetblue;
+                
+            }
+            #heading{
+                text-align: center;
+                background-color: coral;
+                height:100px;
+            }
+            #btnsubmit{
+                margin: auto;
+            }
+        </style>
+        <title>Pizza Order</title>
+    </head>
+    <body>
+        <div id="main">
+
+        
+        <div id="heading">
+            <h1>WELCOME TO ITALIAN PIZZA!</h1>
+            <p>
+                We deliver pizza in 40 minutes max. If not - Pizza's on us!
+            </p>
+        </div>
+        
+        <div class="form">
+            <form action="" method="POST">
+                <label> Email</label><br>
+                <input type="text" id="t1" name="t1">
+                <br>
+                <br>
+                <label>Phone</label><br>
+                <input type="text" id="t2" name="t2" width:100px>
+                <input type="text" id="t3" name="t3" width:100px>
+                <input type="text" id="t4" name="t4" width:100px>
+                <br><br>
+                <label> Number of Slices</label><br>
+                <input type="text" id="t5" name="t5">
+                <br><br>
+                <label> Pizza Size</label><br>
+                <input type="radio" name="r1" id="r1" value="8-inch">
+                <label>8-inch</label>
+                <input type="radio" name="r1" id="r1" value="10-inch">
+                <label>10-inch</label>
+                <input type="radio" name="r1" id="r1" value="12-inch">
+                <label>12-inch</label>
+                <input type="radio" name="r1" id="r1" value="14-inch">
+                <label>14-inch</label><br><br>
+
+                <label> Toppings </label><br>
+                <input type="checkbox" id="ck1" name="ck1" value="Pepperoni">
+                <label>Pepperoni</label>
+                <label> Toppings </label>
+                <input type="checkbox" id="ck2" name="ck2" value="Onions">
+                <label>Onions</label>
+                <label> Toppings </label>
+                <input type="checkbox" id="ck3" name="ck3" value="Olives">
+                <label>Olives</label>
+                <label> Toppings </label>
+                <input type="checkbox" id="ck4" name="ck4" value="Sausages">
+                <label>Sausages</label><br><br>
+                <label>*</label>
+                <input type="checkbox" id="ck5" name="ck5">
+                <label> I agree to the TERMS AND CONDITIONS</label>
+                <br><br>
+            </form>
+        </div>
+        <div id="btnsubmit">
+            <input type="submit" id="bt1" name="bt1" value="Order Now">
+
+        </div>
+    </div>
+    </body>
+</html>
