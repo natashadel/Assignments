@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .heading{
+                float:left;
+                background-color: black;
+                height:75px;
+                color: white;
+                width:100%;
+                padding:20px;
+                box-sizing: border-box;
+                justify-content: center;
+            }
+            .hello{
+                float: left;
+                margin-left:40px;
+                margin-right:40px;
+            }
+            .first{
+                float:left;
+            }
+            .search{
+                float: left;
+                margin-left:20px;
+                margin-right:20px;
+            }
+            .signin{
+                width:75px;
+                float:right;
+            }
+            nav{
+                width: 100%;
+                background-color: grey;
+                height: 70px;
+            }
+              
+            nav ul li{
+                width:100px;
+                height: 30px;
+                float: left;
+                list-style: none;  
+                border-left: 2px solid black;
+                padding: 10px;              
+            }
+            li:hover{
+                background-color: lightyellow;
+            }
+            .sec1{
+                float: left;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            .art1, .art2, .art3{
+                width: 350px;
+                height:400px;
+                border: 2px solid slategray;
+                padding: 10px;
+                box-sizing: border-box;
+                font-size: 18px;
+                font-weight: bold;
+                margin: 10px;
+                float: left;
+            }
+            
+            .furniture, .mobiles, .saree{
+                width:250px;
+                height: 250px;
+                float: left;
+            }
+            .art2, .art3{
+                justify-content:left;
+                float: left;
+            }
+            .foot{
+                background-color: grey;
+                width:100%;
+                height: 70px;
+                display:flex;
+                bottom:0;
+                left:0;
+            }
+             
+        </style>
+        <title> HTML5 New Home Page</title>
+    </head>
+    <body>
+        <header class="heading">
+            <div class="first">
+                <a>
+                    <img src="http://images.hgmsites.net/hug/amazon-logo_100609705_h.jpg" href="https://www.amazon.in/ref=nav_logo" width="100px" height="50px">
+                </a>
+            </div>
+            <div class="hello">
+                <span> Hello! </span>
+            </div>
+            
+            <div class="search">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Search here" id="s1" name="s1" width="250px" height="100px">
+                    <button> Search </button>
+                </form>
+            </div>
+            <div class="signin"> 
+                <button> 
+                    <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
+                        Sign In
+                    </a> 
+                </button>
+            </div>
+        </header>
+        <br/>
+        <br/><br/>
+        <nav class="navigate">
+                <ul>
+                    <li href="#"> All </li>
+                    <li href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers"> Best Sellers</li>
+                    <li href="https://www.amazon.in/deals?ref_=nav_cs_gb"> Today's Deals </li>
+                    <li href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics"> Electronics </li>
+                    <li href="https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home"> Home & Kitchen </li>
+                    <li href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion"> Fashion </li>
+                    <br><br>
+                </ul>
+                
+            <br><br>
+        </nav>
+        <br><br>
+        <section class="sec1">
+            <article class="art1">
+                <figure class="home">
+                    <figcaption> Update your home | Amazon brands and more </figcaption>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/372X232_4._SY232_CB606110532_.jpg" class="furniture"> 
+                </figure>
+            </article>
+        
+            <article class="art2">
+                <figure class="electronics">
+                    <figcaption> Buy mobiles, laptops and more | Amazon brands and more </figcaption>
+                    <img src="https://m.media-amazon.com/images/I/31jQ91XUDhS._SY445_SX342_QL70_FMwebp_.jpg" class="mobiles"> 
+                </figure>
+            </article>
+        
+            <article class="art3">
+                <figure class="fashion">
+                    <figcaption> Check out stylish sarees and dresses | Amazon brands and more </figcaption>
+                    <img src="https://m.media-amazon.com/images/I/613mMOWnrxL._UY879_.jpg" class="saree"> 
+                </figure>
+            </article>
+        </section>
+        <footer class="foot">
+                <a href="#top"> Back to top</a>
+                <br/><br/>
+                <ul style="list-style: none; float: center;">
+                    <li> Get to Know Us</li>
+                    <li> About Us</li>
+                    <li> Contact Us</li>
+                </ul>
+        </footer>
+    </body>
+</html>
