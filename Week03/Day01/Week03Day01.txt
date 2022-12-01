@@ -1,0 +1,55 @@
+1. How to add or remove css classes to html elements using javaScript? Check with example.
+
+We can use the classList property to manipulate CSS classes using JavaScript. It is a read-only property that returns a live DOMTokenList collection of all the classes applied to the element.
+The classList property works in all modern browsers and IE10 and above.
+You can use the classList property to easily add, remove, and toggle CSS classes from an element in vanilla JavaScript.
+--> add() method: The add() method adds one or more classes to the HTML element:
+			Eg:-var el = document.getElementById("div1");
+
+				// Adding Single class
+				el.classList.add("my-class");
+
+				// Adding Multiple calsses
+				el.classList.add("my-class", "my-another-class"); If you try to add a class that already exists, the add() method will ignore it.
+
+--> remove() method: The remove() method is used to remove one or more classes from the element:
+			Eg:-var el = document.getElementById("divID");
+					// Removing class
+					el.classList.remove("my-class"); If you try to remove a class that doesn't exist, JavaScript will completely ignore it.
+
+
+2. What is CDN? What are the advantages of using CDN urls?
+A CDN or A content delivery network (CDN) refers to a geographically distributed group of servers that can provide Internet content fast. A CDN allows for the quick transfer of files needed for loading Internet content, including HTML pages, javascript files, stylesheets, images, videos, etc
+
+
+3. How to align justify using Bootstrap?
+To align flex items, use the justify-content-* class.
+
+Use any of the following to align flex items at the start, end, around, and between.
+
+justify-content-start – Align Flex items at the start
+justify-content-end  - Align Flex items at the end
+justify-content-around – Align  flex items around on different screen sizes
+justify-content-between  - Alex flex items in between on difference screen sizes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

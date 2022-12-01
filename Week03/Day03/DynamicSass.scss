@@ -1,0 +1,22 @@
+@mixin theme($text-size:1)
+{
+      
+    $size : $text-size * 2;
+    @if($size<=3)
+    {
+        color: red;
+        border: 2px solid red;
+    }
+    @else
+    {
+        color: green;
+        border: 2px solid green;
+    }
+}
+
+@for $i from 1 to 7
+{
+    .ts#{$i}{
+        @include theme($i);
+    }
+}

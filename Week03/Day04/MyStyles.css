@@ -1,0 +1,45 @@
+.head {
+  border: 2px solid pink;
+  background-color: powderblue;
+  text-align: center;
+  margin-top: 3px;
+}
+.secondary {
+  color: pink;
+  border: 2px solid grey;
+}
+.dark {
+  color: pink;
+  border: 2px solid darkblue;
+}
+.info {
+  color: pink;
+  border: 2px solid lime;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.Circle {
+  color: pink;
+  border: 2px solid "Circle";
+  width: 350px;
+  height: 350px;
+  border-radius: 100px;
+}
+.Square {
+  color: pink;
+  border: 2px solid "Square";
+  width: 350px;
+  height: 350px;
+}
+.Rectangle {
+  color: pink;
+  border: 2px solid "Rectangle";
+  width: 350px;
+  height: 200px;
+}

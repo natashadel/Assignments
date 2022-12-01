@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"  rel="stylesheet"  />
+    </head>
+    <body>
+        <h2 class="text-center text-bg-success py-3">Image Styles in Bootstrap</h2>
+        <div class="container">
+            <span class="text-start">Choose Image Style: </span>
+            <select id="change" onchange="f1()">
+                <option>rounded</option>
+                <option>rounded-circle</option>
+                <option>img-thumbnail</option>
+            </select>
+
+            <img src="https://wallpapercave.com/wp/CpRGNUC.jpg" class="image w-100 mt-3 rounded" id="image1">
+        </div>
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+           <script> 
+            
+
+            function f1()
+            {
+                var element = document.getElementById("change").value;
+                var ImgObj = document.getElementById("image1");
+                ImgObj.className="image w-100 mt-3";
+                ImgObj.classList.add(element);
+            }
+        </script>
+    </body>
+</html>

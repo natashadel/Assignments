@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Less Concepts</title>
+        <link rel="stylesheet" href="MyStyles.css"/>
+    </head>
+    <body>
+        <div class="head">
+           <h2> Applying styling with LESS </h2>
+        </div>
+        <div class="container">
+            <p class="secondary"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officia itaque deserunt saepe quidem dolores.
+                <br><a href="#">Know More</a>
+            </p>
+            <p class="dark"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officia itaque deserunt saepe quidem dolores.
+                <br><a href="#">Know More</a>
+            </p>
+            <p class="info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officia itaque deserunt saepe quidem dolores.
+                <br><a href="#">Know More</a>
+            </p>
+        </div><br>
+        <div class="container mt-3">
+            <label>Choose Image Shape</label>
+            <select id="shape1" onchange="fn_shape()">
+                <option>Circle</option>
+                <option>Square</option>
+                <option>Rectangle</option>
+            </select><br><br>
+            <img id="image1" class="Circle" src="https://www.pixelstalk.net/wp-content/uploads/2016/12/Free-Beautiful-Landscape-Image.jpg" style="width:200px; height:200px;"/>
+            
+        </div>
+        <script>
+            function fn_shape()
+            {
+                var ShapeObj = document.getElementById("shape1").value;
+                var obj = document.querySelector("#image1");
+                obj.className = ShapeObj;
+            }
+        </script>
+    </body>
+</html>

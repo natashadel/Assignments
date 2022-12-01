@@ -1,0 +1,21 @@
+.rectangle {
+  margin: 10px;
+  width: 350px;
+  height: 200px;
+  box-shadow: 5px 5px 5px purple;
+}
+
+.square {
+  margin: 10px;
+  width: 350px;
+  height: 350px;
+  box-shadow: 5px 5px 5px pink;
+}
+
+.circle {
+  margin: 10px;
+  width: 350px;
+  height: 350px;
+  border-radius: 200px;
+  box-shadow: 5px 5px 5px lightblue;
+}/*# sourceMappingURL=MyStyle.css.map */

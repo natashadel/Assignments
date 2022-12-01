@@ -1,0 +1,37 @@
+@mixin theme($shadowColor:purple, $imgShape: "Rectangle")
+{
+    margin: 10px;
+    
+    
+    @if($imgShape=="Rectangle")
+    {
+        width: 350px;
+        height: 200px;
+        box-shadow: 5px 5px 5px $shadowColor;
+    }
+    @if($imgShape=="Square")
+    {
+        width:350px;
+        height:350px;
+        box-shadow: 5px 5px 5px $shadowColor;
+    }
+    @if($imgShape=="Circle")
+    {
+        width: 350px;
+        height: 350px;
+        border-radius: 200px;
+        box-shadow: 5px 5px 5px $shadowColor;
+    }
+}
+
+.rectangle{
+    @include theme;
+}
+
+.square{
+    @include theme(pink, "Square");
+}
+
+.circle{
+    @include theme(lightblue, "Circle");
+}

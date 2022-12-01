@@ -1,0 +1,64 @@
+@import 'header';
+
+.theme(@themeColor)
+{
+    color: pink;
+    border: 2px solid @themeColor;
+}
+
+.secondary{
+    .theme(grey)
+}
+
+.dark{
+    .theme(darkblue)
+}
+
+.info{
+    .theme(lime)
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+
+.theme(@themeShape) when(@themeShape="Circle"){
+    
+        width: 350px;
+        height: 350px;
+        border-radius: 100px;
+
+}
+.theme(@themeShape) when(@themeShape="Square"){
+    
+        width: 350px;
+        height: 350px;
+    
+    
+}
+.theme(@themeShape) when(@themeShape="Rectangle"){
+    
+        width: 350px;
+        height: 200px;
+    
+    
+}
+
+
+.Circle{
+    .theme("Circle")
+}
+
+.Square{
+    .theme("Square")
+}
+
+.Rectangle{
+    .theme("Rectangle")
+}

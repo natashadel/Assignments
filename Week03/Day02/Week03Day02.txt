@@ -1,0 +1,71 @@
+1. What is Clearfic class? Why do we use?
+The “clearfix” in CSS is a process for an element to automatically fix or clear its elements. This will do not need any additional markup code. This “clearfix” concept is used with float layouts where elements are floated to be stacked horizontally.
+A clearfix is a way for an element to automatically clear or fix its elements so that it does not need to add additional markup. It is generally used in float layouts where elements are floated to be stacked horizontally. If the element is taller than the element containing it then use the overflow property of CSS by setting its value as auto in order to overcome & fix the problem.
+
+2. How to hide elements using Bootstrap?
+Bootstrap 5 Visually hidden are used to visually hide an element so that it does not display on the page while still allowing it to be exposed to assistive technologies. The isually-hidden class hides the element by default and the visually-hidden-focusable class visually hides an element but displays it when it is focused.
+The isually-hidden class hides the element by default and the visually-hidden-focusable class visually hides an element but displays it when it is focused. The visually-hidden-focusable class can also be applied to a container by using :focus-within, the container will be displayed when any child element of the container receives focus. 
+Below are the used classes for visually hidden.
+-->visually-hidden: This class visually hides an element.
+-->visually-hidden-focusable: This class visually hides an element but displays it when it is focused.
+Syntax:
+<h2 class="Visually hidden Class">. . .</h2>
+
+3. What is spinner class? How to create spinners in Bootstrap?
+Bootstrap “spinners” can be used to show the loading state in your projects. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, alignment, and sizing can be easily customized with our amazing utility classes.
+Eg:-<div class="spinner-border" role="status">
+  	<span class="sr-only">Loading...</span>
+	</div>
+
+Eg:-<div class="spinner-border text-primary" role="status">
+  	<span class="sr-only">Loading...</span>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
