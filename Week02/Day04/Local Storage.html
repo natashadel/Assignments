@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                text-align: center;
+            }
+            .container{
+                float: center;
+            }
+            form{
+            width: 50%;
+            margin: auto;
+            border: 2px solid slategray;
+            padding: 10px;;
+            }
+            form #btn2{
+                position: relative;
+                left: 20%;
+            }
+            form #btn4{
+                position: relative;
+                left: 30%;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1> Customer Login Page </h1>
+        <div class="container">
+            <form action="Login.php" method="post">
+                <fieldset>
+                    <legend> Customer Name </legend>
+                    <input type="text" id="t1" name="t1" autofocus/>
+                </fieldset>
+                <fieldset>
+                    <legend> Joined Date </legend>
+                    <input type="date" id="date1" name="date1"/>
+                </fieldset>
+                <fieldset>
+                    <legend> Favourite Color </legend>
+                    <input type="color" id="col1" name="col1"/>
+                    <input type="button" id="btn1" name="btn1" value="Save Color"/>
+                </fieldset><br>
+                <input type="button" id="btn2" name="btn2" value="Save Customer Data" onclick="fn_saveData()"/>
+                <input type="button" id="btn4" name="btn4" value="Delete Customer Data" onclick="fn_deleteData()">
+            </form>
+
+            <a href="GetDetails.html" onclick="fn_getData()">View Customer Details</a>
+        </div>
+        <script>
+            function fn_saveData()
+            {
+                var txtObj = document.getElementById("t1");
+                var dtObj = document.getElementById("date1");
+                var colObj = document.getElementById("col1");
+
+                var dataObj = {};
+                dataObj.t1 = txtObj.value;
+                dataObj.date1 = dtObj.value;
+                dataObj.col1 = colObj.value;
+
+                var resultStr = JSON.stringify(dataObj);
+
+                localStorage.setItem("Cusdata", resultStr);
+
+                alert("Customer Data stored in localStorage");
+            }
+            function fn_deleteData()
+            {
+                localStorage.removeItem("Cusdata");
+                alert("Customer data removed from localStorage");
+            }
+            
+        </script>
+    </body>
+</html>

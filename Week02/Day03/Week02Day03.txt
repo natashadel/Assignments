@@ -1,0 +1,29 @@
+1. Find the details about <datalist> attribute in HTML5 forms.
+
+The <datalist> tag specifies a list of pre-defined options for an <input> element.
+The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will see a drop-down list of pre-defined options as they input data.
+The <datalist> element's id attribute must be equal to the <input> element's list attribute (this binds them together).
+The <datalist> tag also supports the Global Attributes in HTML. The <datalist> tag also supports the Event Attributes in HTML.
+
+
+2. What are  Web Crawlers in SEO? 
+A web crawler, also referred to as a search engine bot or a website spider, is a digital bot that crawls across the World Wide Web to find and index pages for search engines. Search engines don’t magically know what websites exist on the Internet.
+The programs have to crawl and index them before they can deliver the right pages for keywords and phrases, or the words people use to find a useful page. Search engines use web crawler programs as their helpers to browse the Internet for pages before storing that page data to use in future searches.
+
+3. Why do you use backlinks in SEO?
+Backlinks are links that lead from another website to your own. In other words, these links aren’t on your website — they lead to your website from somewhere else on the Internet. When it comes to SEO, sites seek backlinks to earn credibility within their industry. They’re a useful tool for bringing traffic to your site.
+Backlinks serve as an endorsement or “vote of confidence” of your site, which can increase trust. Backlinks are one of the most influential ranking factors used by search engines.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

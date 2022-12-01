@@ -1,0 +1,18 @@
+1. What is viewport?
+The term viewport refers to the size of the window or the area visible on the screen. In general, this term is used to refer to displays on mobile devices such as smartphones and tablets.
+The viewport does not have the same size, it varies with the variation in screen size of the devices on which the website is visible. For a laptop, the viewport has a larger size as compared to a smartphone or tablet.
+HTML5 introduced a method to let web designers take control over the viewport, through the <meta>tag. You should include the following <meta>viewport element in all your web pages: This gives the browser instructions on how to control the page's dimensions and scaling. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

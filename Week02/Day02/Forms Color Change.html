@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h3{
+                text-align: center;
+            }
+            .container-apply{
+                border: 2px solid orange;
+            }
+            .container-apply h2{
+                text-align: center;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h3> Web Forms 2.0 (HTML5 Forms)</h3>
+        <hr>
+        <div class="container-color">
+            <h5 id="hcol">Select Color</h5>
+            <input type="color" id="c1" name="c1">
+            <input type="button" value="Apply Color" onclick="f1()"/>
+        </div><br>
+        <div class="container-apply" id="div1">
+            <h2 id="happly"> Welcome to HTML5 Forms </h2>
+        </div>
+        <script>
+            function f1()
+            {
+                var InpObj = document.getElementById("c1");
+                var ColObj = document.getElementById("div1");
+                ColObj.style.backgroundColor = InpObj.value;
+            }
+            
+        </script>
+    </body>
+</html>

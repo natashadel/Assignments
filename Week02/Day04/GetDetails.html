@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: cornflowerblue;
+            }
+            h1{
+                text-align: center;
+            }
+            .btn{
+                margin:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Customer Details from localStorage</h1>
+        <hr>
+        <h3 id="welcome"></h3>
+        <p id="p1"></p>
+        <input type="button" id="btn3" name="btn3" class="btn" value="Click here" onclick="fn_getData()"/>
+
+        <script>
+            function fn_getData()
+            {
+                var dataStr = localStorage.getItem("Cusdata");
+
+                var welObj = document.getElementById("welcome");
+                var paraObj = document.getElementById("p1");
+
+                if(dataStr==null)
+                {
+                    document.body.style.backgroundColor = "white";
+                    dataStr="";
+                    welObj.innerHTML = "Welcome to Guest User";
+                    paraObj.innerHTML = "There is no Customer Data in localStorage";
+
+                    
+                    return;
+                }
+                else{
+                    var CusObj = JSON.parse(dataStr);
+                    welObj.innerHTML = "Welcome to " + CusObj.t1;
+                    paraObj.innerHTML = "Customer Name: " + CusObj.t1 + "," + " Joining Date: " + CusObj.date1 + "," + " Favourite Color: " +  CusObj.col1;
+                }
+
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container h1{
+                text-align: center;
+            }
+            div{
+                margin:auto;
+                width: 100%;
+            }
+            .container form{
+                border: 2px solid slategray;
+                margin: auto;
+                padding: 0;
+                text-align: center;
+            }
+            .container input{
+                width: 40%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Bank Account Opening Form</h1>
+        <hr>
+        <div class="container">
+            <form action="#" method="post" id="form1">
+                <label> Name on Account </label><br>
+                <input type="text" id="t1" name="t1" placeholder="First Name" required><br>
+                <input type="text" id="t2" name="t2" placeholder="Middle Name" required><br>
+                <input type="text" id="t3" name="t3" placeholder="Last Name" required><br><br>
+                <label> Account Number </label><br>
+                <input type="number" id="n1" class="n1" required><br><br>
+                <label> Account Type </label><br>
+                <input type="radio" id="r1" name="r1" value="Current Account" required>Current Account<br>
+                <input type="radio" id="r2" name="r1" value="Savings Account">Savings Account<br><br>
+                <label> Address</label><br>
+                <textarea id="t4" name="t4" placeholder="Please Enter Full Address" required></textarea><br>
+                <input type="text" id="t5" name="t5" placeholder="City" required><br>
+                <input type="text" id="t6" name="t6" placeholder="State" required><br>
+                <input type="number" id="n2" name="n2" placeholder="Pincode" required><br><br>
+                <label> Occupation </label><br>
+                <select>
+                    <option value="Public Sector" >Public Sector</option>
+                    <option value="Private Sector"> Private Sector</option>
+                </select><br><br>
+                <label> Phone Number </label><br>
+                <select>
+                    <option value="Home">Home</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Work">Work</option>
+                </select><br>
+                <input type="number" id="n3" class="n3" required><br><br>
+                <input type="button" id="sbt1" name="sbt1" value="Submit"><br><br>
+                <input type="checkbox" id="cb1" name="cb1" required> I agree to the Terms & Conditions.
+            </form>
+        </div>
+    </body>
+</html>
