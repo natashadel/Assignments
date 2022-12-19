@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Math Operations using JavaScript</title>
+    </head>
+    <body>
+        <h2> Mathematical Operations</h2>
+        <hr/>
+        <div class="container">
+            <label> First Number</label>
+            <input type="number" id="n1"><br/><br/>
+            <label> Second Number</label>
+            <input type="number" id="n2"><br/><br/>
+            <input type="button" id="btn1" onclick="fn_Math()" value="Add"/>
+            <input type="button" id="btn2" onclick="fn_Math()" value="Subtract"/>
+            <input type="button" id="btn3" onclick="fn_Math()" value="Multiply"/><br/><br/>
+            <p id="p1"></p>
+        </div>
+        <script>
+            
+
+            /*function fn_Add()
+            {
+                var num1Obj = document.getElementById("n1");
+                var num2Obj = document.getElementById("n2");
+                
+
+                var num1 = parseInt(num1Obj.value);
+                var num2 = parseInt(num2Obj.value);
+                var sum = num1+num2;     
+                var paraObj = document.getElementById("p1");           
+                paraObj.innerHTML = "Result: " +sum;
+            }
+            function fn_Subtract()
+            {
+                var num1Obj = document.getElementById("n1");
+                var num2Obj = document.getElementById("n2");
+                
+
+                var num1 = num1Obj.value;
+                var num2 = num2Obj.value;
+                var diff = num1-num2;
+                var paraObj = document.getElementById("p1"); 
+                paraObj.innerHTML = "Result: " +diff;
+            }
+            function fn_Multiply()
+            {
+                var num1Obj = document.getElementById("n1");
+                var num2Obj = document.getElementById("n2");
+                
+
+                var num1 = num1Obj.value;
+                var num2 = num2Obj.value;
+                var pdt = num1*num2;
+
+                var paraObj = document.getElementById("p1"); 
+                paraObj.innerHTML = "Result: " +pdt;
+            }*/
+            function fn_Math()
+            {          
+
+                var num1Obj = document.getElementById("n1");
+                var num2Obj = document.getElementById("n2");
+                
+
+                var num1 = parseInt(num1Obj.value);
+                var num2 = parseInt(num2Obj.value);
+                var res;
+                
+                if(event.target.id == "btn1"){
+                    res = num1 + num2;
+                }
+                if(event.target.id == "btn2"){
+                    res = num1 - num2;
+                }
+                if(event.target.id == "btn3"){
+                    res = num1 * num2;
+                }
+                var paraObj = document.getElementById("p1"); 
+                paraObj.innerHTML = "Result: " +res;
+
+            }
+        </script>
+    </body>
+</html>

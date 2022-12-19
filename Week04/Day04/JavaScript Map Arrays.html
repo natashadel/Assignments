@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Functions</title>
+    </head>
+    <body>
+        <h2> Operations on Functions in JavaScript</h2>
+        <hr/>
+        
+        <input type="button" onclick="fn_named()" value="Named Functions"/>
+        <input type="button" onclick="fn_anonymous()" value="Powers of"/>
+        <input type="button" onclick="fn_getWords()" value="Word Count"/>
+
+        <p id="p1"></p>
+
+        <script>
+            var citiesArray  = [ " Hyderabad", " Mumbai",  " Bangalore", " Gurgaon"];
+            function fn_named()
+            {
+                
+                var result = citiesArray.map(toUpper);
+                var paraObj = document.getElementById("p1");
+                paraObj.innerHTML = "City Names " +result; 
+            
+            }
+            function toUpper(item)
+            {
+                return item.toUpperCase();
+            }
+
+            function fn_anonymous()
+            {
+                
+            }
+            
+        </script>
+    </body>
+</html>

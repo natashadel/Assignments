@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Loops using JavaScript</title>
+    </head>
+    <body>
+        <h2> JavaScript Programming -- Loops</h2>
+        <hr/>
+        <input type="button" id="btn1" onclick="fn_getData()" value="Get Data"/>
+        <ul id="list1"></ul>
+
+
+        <script>
+            function fn_getData()
+            {
+                var ulObj = document.getElementById("list1");
+                var str="";
+                
+                for(var i=1;i<=5; i++)  
+                {
+                    if(i%2==0)
+                    {                        
+                        str+= '<li style="color:blue">Welcome to JavaScript - ' +i +'</li>';
+                    }                      
+                    
+                    else
+                    {
+                        str+= '<li style="color:green">Welcome to JavaScript - ' +i +'</li>';
+                    }
+                    ulObj.innerHTML = str;
+                }
+                
+            }
+        </script>
+        
+        
+    </body>
+</html>
