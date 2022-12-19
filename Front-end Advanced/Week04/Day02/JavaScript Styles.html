@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Styles</title>
+    </head>
+    <body>
+        <h2> Working with JavaScript</h2>
+        Username: <input type="text" id="t1" name="t1"/><br/><br/>
+        Password: <input type="password" id="pwd1" name="pwd1"/><br/><br/>
+        <input type="button" id="btn1" onclick="fn_Login()" value="Login"/>
+        <p id="p1"></p>
+
+        <script>
+            function fn_Login()
+            {              
+                var paraObj = document.getElementById("p1");
+                var txtObj = document.getElementById("t1");
+                var pwdObj = document.getElementById("pwd1");
+
+                var txt = txtObj.value;
+                var pwd = pwdObj.value;
+                if(txt == "admin" && pwd == "admin123")
+                {
+                    paraObj.innerHTML="Welcome " + txtObj.value;
+                    paraObj.style.color = "Green";
+                }
+                else{
+                    paraObj.innerHTML="Incorrect username or password";
+                    paraObj.style.color = "Red";
+                }
+            }
+        </script>
+    </body>
+
+</html>

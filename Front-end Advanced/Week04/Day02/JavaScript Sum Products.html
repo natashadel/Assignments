@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+       <h2> Total Products </h2> 
+       <fieldset>
+        <legend>Product Details</legend>
+        Product Name: <input type="text" id="t1"><br/><br/>
+        Unit Price: <input type="number" id="n1"><br/><br/>
+        Quantity: <input type="number" id="n2"><br/><br/>
+        <input type="button" id="btn1" onclick ="fn_sumProducts()" value="Get Total"/><br/><br/>
+        <p id="p1"></p>
+       </fieldset>
+       <script>
+        function fn_sumProducts()
+        {
+            var txtObj = document.getElementById("t1");
+            var priceObj = document.getElementById("n1");
+            var qtyObj = document.getElementById("n2");
+
+            var price = priceObj.value;
+            var qty = qtyObj.value;
+
+            var result = price * qty;
+
+            var paraObj = document.getElementById("p1");
+            paraObj.innerHTML="Total Amount: " +result;
+        }
+       </script>
+    </body>
+</html>

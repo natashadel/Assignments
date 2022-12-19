@@ -1,0 +1,32 @@
+1.  What is eval() method in JavaScript? How to use it? Check with an example?
+eval() is a global function in JavaScript that evaluates a specified string as JavaScript code and executes it.
+-->Eg:- eval("alert('this is executed by eval()')");
+eval can convert string to JSON object. The eval() method evaluates or executes an argument.
+If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements.
+eval() is an ECMAScript1 (ES1) feature.
+
+2. What is the difference between   "this" and  $(this) in jquery programming?
+'this': In JavaScript, this keyword is used to refer to the object it belongs to. The value that this stores is the current execution context of the JavaScript program.
+Thus, when used inside a function this‘s value will change depending on how that function is defined, how it is invoked and the default execution context.
+
+$(this): It also refers to the object it belongs to. Basically, both are the same. But when this keyword is used inside $(), then it becomes a jQuery object, and now we can use all properties of jQuery on this method.
+
+The this Keyword is a reference to DOM elements of invocation. We can call all DOM methods on it. $() is a jQuery constructor and in $(this), we are just passing this as a parameter so that we can use the jQuery function and methods.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

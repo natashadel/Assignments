@@ -1,0 +1,24 @@
+1.  How to add events to html elements at runtime  using javascript?
+There are lots of standard and event attributes you can use with a element. If you want to use multiple event attributes on single element then it would not be feasible or a good idea to add those in a element. It will not be good for readability and maintenance.
+
+In this case, you can just use addEventListener function to attach an event attribute to an element without adding attribute to the element directly.
+
+<!DOCTYPE html>
+<html>
+    <head>
+     Button Click Example
+    </head>
+    <body>
+         
+        <p>
+          <button id ="btn2">Click Button</button>
+        </p>
+        <script>
+           const button = document.getElementById("btn2");
+           button.addEventListener('click', function () {
+            alert("Hello Button");
+           });
+        </script>
+        
+    </body>
+</html>

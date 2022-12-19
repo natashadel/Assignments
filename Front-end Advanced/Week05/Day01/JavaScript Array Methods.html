@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h2>Data Filtration using JavaScript</h2>
+        <hr/>
+        <span>Search Value:</span>
+        <input type="text" id="t1" name="t1"/>
+        <input type="button" id="btn1" name="btn1" onclick="fn_EmpNo()" value="Find By EmpNo"/>
+        <input type="button" id="btn2" name="btn2" onclick="fn_Job()" value="Find By Job"/><br/><br/>
+        <table id="table1" border="1" width="40%">
+            <tr>
+                    <th>EmpNo</th>
+                    <th>EName</th>
+                    <th>Job</th>
+                    <th>Salary</th>
+                    <th>DeptNo</th>
+            </tr>
+        </table>
+
+        <script>
+            var arr=[{EmpNo:101, EName:"Scott", Job: "Manager", Salary: 60000, DeptNo: 5}, 
+                    {EmpNo:102, Ename: "Matt", Job: "Lead", Salary: 75000, DeptNo:3},
+                    {EmpNo:103, Ename:"Jenny", Job:"Dean", Salary: 100000, DeptNo: 4},
+                    {EmpNo:104, Ename:"Dan", Job: "Manager", Salary: 65000, DeptNo:6},
+                    {EmpNo:105, Ename:"John", Job: "Developer", Salary: 50000, DeptNo:4},
+                    {EmpNo:106, Ename:"Mary", Job: "Lead", Salary: 68000, DeptNo:6},
+                    {EmpNo:107, Ename:"Jim", Job: "Developer", Salary: 55000, DeptNo:5}];
+            function fn_EmpNo()
+            {
+                var filterarr = arr.filter(fn_filter); 
+                fn_showData(filterarr);
+            }
+            function fn_filter(i)
+            {
+                var txtObj = document.getElementById("t1");
+                return parseInt(txtObj.value)==i.EmpNo;                
+            }
+            function fn_showData(filterarr)
+            {
+
+                var tblObj=document.getElementById("table1");
+                tblObj.innerHTML = tblhead;
+                for(var i in filterarr)
+                {
+                    var row = tblObj.insertRow(-1);
+                    const keys = Object.keys(filterarr[i]);
+                    for(var j in keys)
+                    {
+                        var cell = row.insertCell(-1);
+                        cell.innerHTML = filterarr[i][keys[j]];
+                    }
+                }
+                
+            }
+            var tblhead = document.getElementById("table1").innerHTML;
+            function fn_Job()
+            {
+                var filterarr = arr.filter(fn_filterJob); 
+                fn_showData(filterarr);
+            }
+            function fn_filterJob(i)
+            {
+                var txtObj = document.getElementById("t1");
+                return txtObj.value.toLowerCase()==i.Job.toLowerCase();                
+            }
+            
+        </script>
+    </body>
+</html>
