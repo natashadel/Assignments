@@ -1,0 +1,57 @@
+1.  How to hide html element using JavaScript?
+
+-->Using the hidden property
+	document.getElementById('element').hidden = true
+
+-->Using the style.display property- In JavaScript, style.display property is also used to hide the HTML element. It can have values like ‘block,’ ‘inline,’ ‘inline-block,’ etc., but the value used to hide an element is ‘none.’ 
+				     Using JavaScript, we set the style.display property value to ‘none’ to hide html element.
+	document.getElementById('element').style.display = 'none'
+
+-->Using the style.visibility property- In JavaScript, style.visibility property is also used to hide the HTML element. It can have values like ‘visible,’ ‘collapse,’ ‘hidden’, ‘initial’ etc., but the value used to hide an element is ‘hidden’. 
+					Using JavaScript, we set the style.visibility property value to ‘hidden’ to hide html element.
+	document.getElementById('element').style.visibility = 'hidden'
+
+
+2. How to change text color of all paragraphs in the document using JavaScript?
+-->	var paraObj = document.getElementsByTagName("p");	
+	for(var i of paraObj)
+	{
+		i.style.color = "red";
+	}
+
+-->	var paraObj = document.querySelectorAll("p");	
+	for(var i of paraObj)
+	{
+		i.style.color = "red";
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
