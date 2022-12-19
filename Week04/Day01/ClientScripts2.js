@@ -1,1 +1,0 @@
-window.alert("WELCOME TO JAVASCRIPT. This is ClientScripts2");

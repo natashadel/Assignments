@@ -1,1 +1,0 @@
-document.write("Hello World. This is ClientScripts1");
